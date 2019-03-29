@@ -1,4 +1,4 @@
-[![Plivo iOS Sample App](https://s3-eu-west-1.amazonaws.com/tpd/logos/573065630000ff00058c9b88/0x0.png)](https://www.plivo.com) [![Plivo iOS Sample App](https://s3-eu-west-1.amazonaws.com/tpd/logos/573065630000ff00058c9b88/0x0.png)](https://www.plivo.com)
+[![Plivo iOS Sample App](https://github.com/Ankish/SMSVerify/blob/master/Media/Simulator%20Screen%20Shot%20-%20iPhone%206%20-%202019-03-27%20at%2017.35.37.png)](https://www.plivo.com) [![Plivo iOS Sample App](https://github.com/Ankish/SMSVerify/blob/master/Media/Simulator%20Screen%20Shot%20-%20iPhone%206%20-%202019-03-27%20at%2018.02.02.png)](https://www.plivo.com)
 
 ## Overview
 This library enables developers to integrate SMS verification flow in an easy way. It provides extensive and easy customization of the UI to fit each app’s need. By configuring the UI and providing requests for `Sending OTP` and `Verify OTP`, the developer can integrate verification flow quickly.
