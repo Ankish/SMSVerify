@@ -14,14 +14,14 @@ import libPhoneNumber_iOS
     to be verified. It binds functionality from various helpers and views to
     accumulate the data required to proceed with verification.
  */
-class OTPGenerationController: ViewController {
+class OTPGenerationController: OTPBaseViewController {
     
     /**
      getInstance used to initate the InitateView Controller.
      param : properties - used to configure the UI and also used for Localizing the strings.
      */
     class func getInstance(properties : Properties = Properties(),
-                           consumerDelegate : ConsumerProtocol?) -> UINavigationController {
+                           consumerDelegate : OTPRequestResponseProtocol?) -> UINavigationController {
         let vc = OTPGenerationController(properties: properties)
         vc.consumerDelegate = consumerDelegate
         let navController = NavigationController(rootViewController : vc)
@@ -35,13 +35,15 @@ class OTPGenerationController: ViewController {
     }()
     
     private let scrollView = UIScrollView()
-    private weak var consumerDelegate : ConsumerProtocol?
+    private weak var consumerDelegate : OTPRequestResponseProtocol?
     private var bottomConstraint : NSLayoutConstraint?
     private var selectedRegionCode : String? = NSLocale.current.regionCode {
         didSet {
-                if let nationalNumber = getExampleNumber() {
+            if let nationalNumber = getExampleNumber() {
                 let formatter = NBAsYouTypeFormatter(regionCode: selectedRegionCode)
-                initiateView.phoneTextField.textField.placeholder = formatter?.inputString("\(nationalNumber)") ?? ""
+                
+                initiateView.phoneTextField.textField.attributedPlaceholder = NSAttributedString(string: formatter?.inputString("\(nationalNumber)") ?? "", attributes: [NSAttributedString.Key.foregroundColor : properties.textFieldPlaceholderColor])
+                
                 if let prevNumber = initiateView.phoneTextField.textField.text {
                     initiateView.phoneTextField.textField.text = formatter?.inputString("\(prevNumber)") ?? ""
                 }

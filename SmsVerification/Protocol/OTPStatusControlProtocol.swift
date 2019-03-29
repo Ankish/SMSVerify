@@ -8,8 +8,9 @@
 
 import Foundation
 
-/// ProviderProtocol for general communication between Developer Code to Framework
-protocol ProviderProtocol : class {
+/// This protocol used to controls the OTP Verification flow by passing the proper messages to the library whenever the response
+/// of a request which developer created.
+protocol OTPStatusControlProtocol : class {
     
     /// This method will allow developer to show alerts on Framework screen.
     ///

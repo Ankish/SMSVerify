@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OTPBaseViewController: UIViewController {
     
     public let properties : Properties
     

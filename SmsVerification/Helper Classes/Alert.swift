@@ -10,7 +10,7 @@ import UIKit
 
 struct Alert {
     
-    static func displayError(on viewController: ViewController, with title: String, message: String, dismissController: Bool = false) {
+    static func displayError(on viewController: OTPBaseViewController, with title: String, message: String, dismissController: Bool = false) {
         
         DispatchQueue.main.async {
             viewController.hideActivityIndicator()
@@ -27,19 +27,19 @@ struct Alert {
         }
     }
     
-    static func displayMissingPhoneNumberError(on viewController: ViewController) {
+    static func displayMissingPhoneNumberError(on viewController: OTPBaseViewController) {
         displayError(on: viewController, with: "Error", message: "Please enter a valid phone number")
     }
     
-    static func displayMissingVerificationCodeError(on viewController: ViewController) {
+    static func displayMissingVerificationCodeError(on viewController: OTPBaseViewController) {
         displayError(on: viewController, with: "Error", message: "Please enter the verification code")
     }
     
-    static func displayTimeoutError(on viewController: ViewController) {
+    static func displayTimeoutError(on viewController: OTPBaseViewController) {
         displayError(on: viewController, with: "Error", message: "Verification timed out, please retry verification", dismissController: true)
     }
     
-    static func displayDeeplinkError(on viewController: ViewController) {
+    static func displayDeeplinkError(on viewController: OTPBaseViewController) {
         displayError(on: viewController, with: "Error", message: "AppVerify link could not be handled, please retry verification", dismissController: true)
     }
 }

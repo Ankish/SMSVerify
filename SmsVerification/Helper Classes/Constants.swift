@@ -14,6 +14,6 @@ class Constants {
     /*
      Replace with the proper user name and password.
     */
-    public static let userName = "test_otp_service@plivo.com"
-    public static let password = "wpUfEIWueHofCRq8kPCB"
+    public static let userName = ""
+    public static let password = ""
 }

@@ -9,8 +9,9 @@
 import Foundation
 
 
-/// ConsumerProtocol for general communication between Framework to Developer Code
-protocol ConsumerProtocol : class {
+/// This is a required protocol used for configuring all the requests and response for the sending the OTP message and
+/// verification.Controlling the OTP verification flow via OTPStatusControlProtocol.
+protocol OTPRequestResponseProtocol : class {
     
     /// Called when a user entered the Country Code and Mobile Number.
     /// This method will allow developer to consume the country code and mobile number and

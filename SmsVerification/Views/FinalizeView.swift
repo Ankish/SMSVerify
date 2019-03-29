@@ -43,7 +43,7 @@ class FinalizeView: UIView {
          if #available(iOS 12.0, *) {
             view.textField.textContentType = .oneTimeCode
         }
-        view.textField.keyboardType = properties.codeKeyboardType
+        view.textField.keyboardType = properties.verificationCodeKeyboardType
         return view
     }()
     
@@ -189,8 +189,8 @@ class FinalizeView: UIView {
     private func timedOutAction() {
         self.progressTimer.invalidate()
         resendSecurityCodeButton.isEnabled = true
-        callButton.isHidden = !properties.isCallButtonNeed
-        orLabel.isHidden = !properties.isCallButtonNeed
+        callButton.isHidden = !properties.isCallButtonNeeded
+        orLabel.isHidden = !properties.isCallButtonNeeded
         resendSecurityCodeButton.setTitleColor(properties.resendButtonColor ?? properties.tintColor, for: .normal)
     }
     

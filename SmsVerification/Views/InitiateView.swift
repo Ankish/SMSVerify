@@ -94,7 +94,7 @@ class InitiateView: UIView {
         bringSubviewToFront(headerView)
         addGestureRecognizer(tapGesture)
         
-        if let attributedText = properties.urlSupportInfo {
+        if let attributedText = properties.urlSupportInfoAttributedString {
             let textView = UITextView()
             textView.backgroundColor = .clear
             textView.textAlignment = .center

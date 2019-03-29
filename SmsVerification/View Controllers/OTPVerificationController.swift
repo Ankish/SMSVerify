@@ -14,12 +14,12 @@ import os.log
     payload as manual entry or using the app deep link provided to finalize the
     verification with your server.
  */
-class OTPVerificationController: ViewController {
+class OTPVerificationController: OTPBaseViewController {
 
     // MARK: - Private Properties
     private let phoneNumber : String
     private let countryCode : String
-    private weak var consumerDelegate : ConsumerProtocol?
+    private weak var consumerDelegate : OTPRequestResponseProtocol?
     private var retryCount = 0
     
     private var bottomConstraint : NSLayoutConstraint?
@@ -32,7 +32,7 @@ class OTPVerificationController: ViewController {
     // MARK: - Init
     init(phoneNumber: String,
          countryCode : String,
-         properties : Properties,consumerDelegate : ConsumerProtocol?) {
+         properties : Properties,consumerDelegate : OTPRequestResponseProtocol?) {
         self.phoneNumber = phoneNumber
         self.countryCode = countryCode
         self.consumerDelegate = consumerDelegate

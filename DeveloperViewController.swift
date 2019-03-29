@@ -12,7 +12,7 @@ import UIKit
 class DeveloperViewController: UIViewController {
 
     // MARK: - Properties
-    private weak var delegate : ProviderProtocol?
+    private weak var delegate : OTPStatusControlProtocol?
     private var otpRequestId : String = ""
     private let properties = Properties()
     
@@ -40,8 +40,8 @@ class DeveloperViewController: UIViewController {
         properties.hintColor = UIColor.black.withAlphaComponent(0.9)
         properties.hintFont = UIFont.systemFont(ofSize: 12, weight: .regular)
         properties.logoHeight = 70
-        properties.codeKeyboardType = UIKeyboardType.numberPad
-        properties.urlSupportInfo = getSupportingInformation()
+        properties.verificationCodeKeyboardType = UIKeyboardType.numberPad
+        properties.urlSupportInfoAttributedString = getSupportingInformation()
     }
     
     private func showAlert(title : String,message : String) {
@@ -75,13 +75,14 @@ class DeveloperViewController: UIViewController {
     
     private func openInitialController() {
         let vc = OTPGenerationController.getInstance(properties : properties,consumerDelegate : self)
-        delegate = vc as? ProviderProtocol
+        delegate = vc as? OTPStatusControlProtocol
         self.present(vc, animated: true, completion: nil)
     }
     
     // MARK: - Api methods
     /// fetch the token and store it in user defaults which used for all other api's
     /// For security purpose store this in KeyChain.
+    /// Implement or replace your own auth mechanism.
     private func fetchToken() {
         let json: [String: Any] = ["username":Constants.userName,"password":Constants.password]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
@@ -100,8 +101,9 @@ class DeveloperViewController: UIViewController {
 
 }
 
-// MARK: - RequestProtocol method
-extension DeveloperViewController : ConsumerProtocol {
+// MARK: - OTPRequestResponseProtocol method
+// Check ProviderProtocol for required methods
+extension DeveloperViewController : OTPRequestResponseProtocol {
     
     /**
      Generate the URLRequest for OTP generation and send it back to OTP Generation controller,

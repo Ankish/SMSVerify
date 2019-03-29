@@ -8,10 +8,10 @@
 
 import UIKit
 
-class NavigationController : UINavigationController,ProviderProtocol {
+class NavigationController : UINavigationController,OTPStatusControlProtocol {
     
     func showAlert(title: String, message: String) {
-        if let controller = self.topViewController as? ViewController {
+        if let controller = self.topViewController as? OTPBaseViewController {
             Alert.displayError(on: controller, with: title, message: message, dismissController: false)
         }
     }

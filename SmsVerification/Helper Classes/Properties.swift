@@ -16,7 +16,7 @@ open class Properties {
     }
 
     /**
-    tint Color for entire View
+    tint Color used to change the line splitter , navigation bar button and default color to all buttons.
     */
     public var tintColor : UIColor = UIColor.red
     /**
@@ -28,19 +28,19 @@ open class Properties {
     
     //title Properties
     /**
-     title String which present top of first screen
+     title String which is present on top of first screen
     */
     public var sendTitle : String = "Request OTP"
     /**
-     title String which present top of second screen
+     title String which is present on top of second screen
      */
     public var verifyTitle : String = "Verify OTP"
     /**
-    title Font which present top of the screen
+    title Font which is present on top of the screen
     */
     public var titleFont : UIFont = UIFont.systemFont(ofSize: 15, weight: .regular)
     /**
-     title color which present top of the screen
+     title color which is present on top of the screen
      */
     public var titleColor : UIColor = UIColor.black
     
@@ -48,11 +48,11 @@ open class Properties {
     
     //logo Properties
     /**
-     image for the logoImage view
+     set your app Logo
      */
     public var logo : UIImage? = UIImage(named: "logo")
     /**
-     logo Image View height
+     logo Image height
      */
     public var logoHeight : CGFloat = 70
     
@@ -67,7 +67,10 @@ open class Properties {
      textField text font.
      */
     public var textFieldFont : UIFont = UIFont.systemFont(ofSize: 24, weight: .medium)
-    
+    /**
+     textField placeholder color.
+    */
+    public var textFieldPlaceholderColor : UIColor = UIColor.lightGray
     
     
     //Confirm Button Properties
@@ -96,9 +99,9 @@ open class Properties {
     
     //Verify Code Keyboard Type
     /**
-     Keyboard type for the CODE textView.
+     Keyboard type for the verification code textField.
      */
-    public var codeKeyboardType : UIKeyboardType = .default
+    public var verificationCodeKeyboardType : UIKeyboardType = .default
     
     
     
@@ -112,7 +115,7 @@ open class Properties {
      */
     public var resendButtonColor : UIColor?
     /**
-     resedn hint title
+     resend hint title
      */
     public var resendHintTitle : String = "Didn't receieve the OTP?"
     /**
@@ -124,15 +127,15 @@ open class Properties {
      */
     public var callButtonTitleColor : UIColor?
     /**
-     Call button need to show or not after time out.
+     isCallButtonNeeded used to show/hide the Call button which is alternate way for sending the verification code.
      */
-    public var isCallButtonNeed : Bool = false
+    public var isCallButtonNeeded : Bool = false
     /**
-     Or label text color.
+     Or label text color, which shows up in between of resend and call button.
      */
     public var orLabelTextColor : UIColor = .black
     /**
-     or label text.
+     or label text, which shows up in between of resend and call button.
      */
     public var orLabelText : String = "Or"
     
@@ -151,11 +154,11 @@ open class Properties {
      */
     public var confirmScreenHintText : String = "Enter Security code sent to %@"
     /**
-     hint text font
+     hint text font which is used in verification ,country code picker and generation screen.
      */
     public var hintFont = UIFont.systemFont(ofSize: 11, weight: .regular)
     /**
-     hint text color
+     hint text color which is used in verification ,country code picker and generation screen.
      */
     public var hintColor = UIColor.darkGray
     
@@ -172,7 +175,7 @@ open class Properties {
     
     //Cancel Button Text
     /**
-     Cancel button text
+     Cancel text which used to set title as navigation bar's bar button item.
      */
     public var cancelText : String = "Cancel"
     
@@ -198,7 +201,7 @@ open class Properties {
     /**
      Specify any additional information like privacy policy or terms and Conditions with thier links.
      */
-    public var urlSupportInfo : NSAttributedString?
+    public var urlSupportInfoAttributedString : NSAttributedString?
     
     
     //Enables the resend button after timeout (in Seconds)
@@ -227,12 +230,12 @@ open class Properties {
      */
     public var timerTextColor : UIColor = .black
     /**
-     UI type for the timer
+     UI type for the timer which display in verification screen
      */
     public var timerType : TimerType = .text
     
     /**
-     Retries Max count.
+     Retries Maximum count,once retries is exceeded then this count then user can't generate and send the verification code through resend button.
      */
     public var maxRetries : Int = 3
 }
