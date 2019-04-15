@@ -15,7 +15,7 @@ class Service {
 
     public static let shared = Service()
     
-    private let session = URLSession.shared
+    var session = URLSession.shared
     
     func post(request : URLRequest,completion : @escaping ServiceCompletion) {
         let task = session.dataTask(with: request) { (responseData, response, responseError) in

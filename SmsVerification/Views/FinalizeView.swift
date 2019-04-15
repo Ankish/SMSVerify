@@ -83,7 +83,7 @@ class FinalizeView: UIView {
     }()
     
     private let properties : Properties
-    private var remainingSecond : CGFloat
+    private(set) var remainingSecond : CGFloat
     private var progressTimer = Timer()
     
     init(properties : Properties) {

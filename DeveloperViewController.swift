@@ -14,7 +14,8 @@ class DeveloperViewController: UIViewController {
     // MARK: - Properties
     private weak var delegate : OTPStatusControlProtocol?
     private var otpRequestId : String = ""
-    private let properties = Properties()
+    
+    let properties = Properties()
     
     // MARK: - Life cycle methods
     override func viewDidLoad() {
@@ -73,10 +74,12 @@ class DeveloperViewController: UIViewController {
         return attributeText
     }
     
-    private func openInitialController() {
+    @discardableResult
+    func openInitialController() -> UINavigationController {
         let vc = OTPGenerationController.getInstance(properties : properties,consumerDelegate : self)
         delegate = vc as? OTPStatusControlProtocol
         self.present(vc, animated: true, completion: nil)
+        return vc
     }
     
     // MARK: - Api methods

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42F35D49C644FE4D7A06C8C9 /* Pods_SmsVerificationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC9D955D0B7E4B490386E1E /* Pods_SmsVerificationUITests.framework */; };
 		5DF9801753307E906E2CE664 /* Pods_SmsVerification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B8B8ED508CCFC858D078B6 /* Pods_SmsVerification.framework */; };
 		643C08B0221D8ADA005EF7F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08AF221D8ADA005EF7F2 /* AppDelegate.swift */; };
 		643C08B2221D8ADA005EF7F2 /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08B1221D8ADA005EF7F2 /* DeveloperViewController.swift */; };
@@ -290,7 +291,46 @@
 		645DF246223295F3000242DE /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DF245223295F3000242DE /* NavigationController.swift */; };
 		645DF2482232995D000242DE /* OTPStatusControlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DF2472232995D000242DE /* OTPStatusControlProtocol.swift */; };
 		6473CC982228C67F00896080 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473CC972228C67F00896080 /* CircularProgressView.swift */; };
+		64AE05342258B2C50022EC0D /* SmsVerificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AE05332258B2C50022EC0D /* SmsVerificationUITests.swift */; };
+		64FA0A9E225F879200979277 /* OTPGenerationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08C3221D8B00005EF7F2 /* OTPGenerationController.swift */; };
+		64FA0A9F225F879800979277 /* DeveloperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08B1221D8ADA005EF7F2 /* DeveloperViewController.swift */; };
+		64FA0AA0225F87A300979277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643C08B3221D8ADA005EF7F2 /* Main.storyboard */; };
+		64FA0AA1225F87AA00979277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 643C08B8221D8ADD005EF7F2 /* LaunchScreen.storyboard */; };
+		64FA0AA2225F87B000979277 /* OTPRequestResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C0AE0221D8F7B005EF7F2 /* OTPRequestResponseProtocol.swift */; };
+		64FA0AA3225F87B400979277 /* OTPStatusControlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DF2472232995D000242DE /* OTPStatusControlProtocol.swift */; };
+		64FA0AA4225F87B900979277 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08D6221D8B49005EF7F2 /* AppError.swift */; };
+		64FA0AA5225F87BC00979277 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08D7221D8B49005EF7F2 /* Alert.swift */; };
+		64FA0AA6225F87BF00979277 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08D8221D8B49005EF7F2 /* Log.swift */; };
+		64FA0AA7225F87C500979277 /* countryCode.json in Resources */ = {isa = PBXBuildFile; fileRef = 643C08DE221D8B5C005EF7F2 /* countryCode.json */; };
+		64FA0AA9225F87D100979277 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08DC221D8B5C005EF7F2 /* Properties.swift */; };
+		64FA0AAA225F87D400979277 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DF23D223230E7000242DE /* Request.swift */; };
+		64FA0AAB225F87D700979277 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DF23F22327007000242DE /* Constants.swift */; };
+		64FA0AAC225F87DA00979277 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DF24122327990000242DE /* Service.swift */; };
+		64FA0AAD225F87DD00979277 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DF24322327EAC000242DE /* Data+Extension.swift */; };
+		64FA0AAE225F87E100979277 /* FinalizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08CF221D8B1B005EF7F2 /* FinalizeView.swift */; };
+		64FA0AAF225F87E400979277 /* InitiateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08CC221D8B1A005EF7F2 /* InitiateView.swift */; };
+		64FA0AB0225F87E800979277 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08CE221D8B1B005EF7F2 /* TextField.swift */; };
+		64FA0AB1225F87EB00979277 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08CD221D8B1A005EF7F2 /* HeaderView.swift */; };
+		64FA0AB2225F87EE00979277 /* CountryCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08CB221D8B1A005EF7F2 /* CountryCodeCell.swift */; };
+		64FA0AB3225F87F100979277 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C0AE2221D93EE005EF7F2 /* Button.swift */; };
+		64FA0AB4225F87F400979277 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473CC972228C67F00896080 /* CircularProgressView.swift */; };
+		64FA0AB5225F87F700979277 /* CountryCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08C5221D8B00005EF7F2 /* CountryCodeViewController.swift */; };
+		64FA0AB6225F87FC00979277 /* OTPVerificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08C2221D8B00005EF7F2 /* OTPVerificationController.swift */; };
+		64FA0AB7225F880200979277 /* OTPBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08C4221D8B00005EF7F2 /* OTPBaseViewController.swift */; };
+		64FA0AB8225F880600979277 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DF245223295F3000242DE /* NavigationController.swift */; };
+		64FA0AB9225F880800979277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C08AF221D8ADA005EF7F2 /* AppDelegate.swift */; };
+		64FA0ABA225F880B00979277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643C08B6221D8ADD005EF7F2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64AE05362258B2C50022EC0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 643C08A4221D8AD9005EF7F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 643C08AB221D8ADA005EF7F2;
+			remoteInfo = SmsVerification;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08EE69089A56CD66EBF9A4E2 /* Pods-SmsVerification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsVerification.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmsVerification/Pods-SmsVerification.release.xcconfig"; sourceTree = "<group>"; };
@@ -578,8 +618,14 @@
 		645DF245223295F3000242DE /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		645DF2472232995D000242DE /* OTPStatusControlProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPStatusControlProtocol.swift; sourceTree = "<group>"; };
 		6473CC972228C67F00896080 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		64AE05312258B2C50022EC0D /* SmsVerificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmsVerificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64AE05332258B2C50022EC0D /* SmsVerificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmsVerificationUITests.swift; sourceTree = "<group>"; };
+		64AE05352258B2C50022EC0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86B8B8ED508CCFC858D078B6 /* Pods_SmsVerification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmsVerification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABC9D955D0B7E4B490386E1E /* Pods_SmsVerificationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmsVerificationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83D98B1BEE03C1D72B5DED2 /* Pods-SmsVerification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsVerification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmsVerification/Pods-SmsVerification.debug.xcconfig"; sourceTree = "<group>"; };
+		D9F6282D58175EF197882F5B /* Pods-SmsVerificationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsVerificationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmsVerificationUITests/Pods-SmsVerificationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2911662800663920CE95248 /* Pods-SmsVerificationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmsVerificationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmsVerificationUITests/Pods-SmsVerificationUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -588,6 +634,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF9801753307E906E2CE664 /* Pods_SmsVerification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64AE052E2258B2C50022EC0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F35D49C644FE4D7A06C8C9 /* Pods_SmsVerificationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +654,7 @@
 				643C08B1221D8ADA005EF7F2 /* DeveloperViewController.swift */,
 				643C0ADE221D8B66005EF7F2 /* Storyboards */,
 				643C08AE221D8ADA005EF7F2 /* SmsVerification */,
+				64AE05322258B2C50022EC0D /* SmsVerificationUITests */,
 				643C08AD221D8ADA005EF7F2 /* Products */,
 				7D1EDF09614ACFBF299820B6 /* Pods */,
 				D0C678062998447D72C18F4E /* Frameworks */,
@@ -610,6 +665,7 @@
 			isa = PBXGroup;
 			children = (
 				643C08AC221D8ADA005EF7F2 /* SmsVerification.app */,
+				64AE05312258B2C50022EC0D /* SmsVerificationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -958,11 +1014,22 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		64AE05322258B2C50022EC0D /* SmsVerificationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64AE05332258B2C50022EC0D /* SmsVerificationUITests.swift */,
+				64AE05352258B2C50022EC0D /* Info.plist */,
+			);
+			path = SmsVerificationUITests;
+			sourceTree = "<group>";
+		};
 		7D1EDF09614ACFBF299820B6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				B83D98B1BEE03C1D72B5DED2 /* Pods-SmsVerification.debug.xcconfig */,
 				08EE69089A56CD66EBF9A4E2 /* Pods-SmsVerification.release.xcconfig */,
+				D9F6282D58175EF197882F5B /* Pods-SmsVerificationUITests.debug.xcconfig */,
+				F2911662800663920CE95248 /* Pods-SmsVerificationUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -971,6 +1038,7 @@
 			isa = PBXGroup;
 			children = (
 				86B8B8ED508CCFC858D078B6 /* Pods_SmsVerification.framework */,
+				ABC9D955D0B7E4B490386E1E /* Pods_SmsVerificationUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -997,18 +1065,42 @@
 			productReference = 643C08AC221D8ADA005EF7F2 /* SmsVerification.app */;
 			productType = "com.apple.product-type.application";
 		};
+		64AE05302258B2C50022EC0D /* SmsVerificationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64AE053A2258B2C50022EC0D /* Build configuration list for PBXNativeTarget "SmsVerificationUITests" */;
+			buildPhases = (
+				6243B695E60623B65C367FD0 /* [CP] Check Pods Manifest.lock */,
+				64AE052D2258B2C50022EC0D /* Sources */,
+				64AE052E2258B2C50022EC0D /* Frameworks */,
+				64AE052F2258B2C50022EC0D /* Resources */,
+				AB2017A7537ECF265AEB6788 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64AE05372258B2C50022EC0D /* PBXTargetDependency */,
+			);
+			name = SmsVerificationUITests;
+			productName = SmsVerificationUITests;
+			productReference = 64AE05312258B2C50022EC0D /* SmsVerificationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		643C08A4221D8AD9005EF7F2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Raja Sekar";
 				TargetAttributes = {
 					643C08AB221D8ADA005EF7F2 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					64AE05302258B2C50022EC0D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 643C08AB221D8ADA005EF7F2;
 					};
 				};
 			};
@@ -1026,6 +1118,7 @@
 			projectRoot = "";
 			targets = (
 				643C08AB221D8ADA005EF7F2 /* SmsVerification */,
+				64AE05302258B2C50022EC0D /* SmsVerificationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1296,9 +1389,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64AE052F2258B2C50022EC0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FA0AA0225F87A300979277 /* Main.storyboard in Resources */,
+				64FA0AA1225F87AA00979277 /* LaunchScreen.storyboard in Resources */,
+				64FA0ABA225F880B00979277 /* Assets.xcassets in Resources */,
+				64FA0AA7225F87C500979277 /* countryCode.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6243B695E60623B65C367FD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmsVerificationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2017A7537ECF265AEB6788 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SmsVerificationUITests/Pods-SmsVerificationUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS-iOS12.2/libPhoneNumber_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmsVerificationUITests/Pods-SmsVerificationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E2189A8230AC66B41CCE6E30 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1306,7 +1446,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SmsVerification/Pods-SmsVerification-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
+				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS-iOS10.0/libPhoneNumber_iOS.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1369,7 +1509,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64AE052D2258B2C50022EC0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FA0AAD225F87DD00979277 /* Data+Extension.swift in Sources */,
+				64FA0AB8225F880600979277 /* NavigationController.swift in Sources */,
+				64FA0AA9225F87D100979277 /* Properties.swift in Sources */,
+				64FA0AB6225F87FC00979277 /* OTPVerificationController.swift in Sources */,
+				64FA0AAB225F87D700979277 /* Constants.swift in Sources */,
+				64FA0AB0225F87E800979277 /* TextField.swift in Sources */,
+				64FA0AA2225F87B000979277 /* OTPRequestResponseProtocol.swift in Sources */,
+				64FA0AB3225F87F100979277 /* Button.swift in Sources */,
+				64FA0AAE225F87E100979277 /* FinalizeView.swift in Sources */,
+				64FA0AB1225F87EB00979277 /* HeaderView.swift in Sources */,
+				64FA0AA3225F87B400979277 /* OTPStatusControlProtocol.swift in Sources */,
+				64FA0AA4225F87B900979277 /* AppError.swift in Sources */,
+				64FA0AAC225F87DA00979277 /* Service.swift in Sources */,
+				64FA0AB9225F880800979277 /* AppDelegate.swift in Sources */,
+				64AE05342258B2C50022EC0D /* SmsVerificationUITests.swift in Sources */,
+				64FA0AB2225F87EE00979277 /* CountryCodeCell.swift in Sources */,
+				64FA0AAF225F87E400979277 /* InitiateView.swift in Sources */,
+				64FA0A9E225F879200979277 /* OTPGenerationController.swift in Sources */,
+				64FA0AB7225F880200979277 /* OTPBaseViewController.swift in Sources */,
+				64FA0A9F225F879800979277 /* DeveloperViewController.swift in Sources */,
+				64FA0AAA225F87D400979277 /* Request.swift in Sources */,
+				64FA0AA6225F87BF00979277 /* Log.swift in Sources */,
+				64FA0AB4225F87F400979277 /* CircularProgressView.swift in Sources */,
+				64FA0AA5225F87BC00979277 /* Alert.swift in Sources */,
+				64FA0AB5225F87F700979277 /* CountryCodeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64AE05372258B2C50022EC0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 643C08AB221D8ADA005EF7F2 /* SmsVerification */;
+			targetProxy = 64AE05362258B2C50022EC0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		643C08B3221D8ADA005EF7F2 /* Main.storyboard */ = {
@@ -1547,6 +1727,48 @@
 			};
 			name = Release;
 		};
+		64AE05382258B2C50022EC0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F6282D58175EF197882F5B /* Pods-SmsVerificationUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S45Q933Q2X;
+				INFOPLIST_FILE = SmsVerificationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steth.demo.SmsVerificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmsVerification;
+			};
+			name = Debug;
+		};
+		64AE05392258B2C50022EC0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2911662800663920CE95248 /* Pods-SmsVerificationUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S45Q933Q2X;
+				INFOPLIST_FILE = SmsVerificationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steth.demo.SmsVerificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmsVerification;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1564,6 +1786,15 @@
 			buildConfigurations = (
 				643C08BF221D8ADD005EF7F2 /* Debug */,
 				643C08C0221D8ADD005EF7F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64AE053A2258B2C50022EC0D /* Build configuration list for PBXNativeTarget "SmsVerificationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64AE05382258B2C50022EC0D /* Debug */,
+				64AE05392258B2C50022EC0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D4104A3BA54DA673490171218E4B06F"
+               BlueprintIdentifier = "48B32E1F5B6126BB4914DC664B848F21"
                BuildableName = "libPhoneNumber_iOS.framework"
-               BlueprintName = "libPhoneNumber-iOS"
+               BlueprintName = "libPhoneNumber-iOS-iOS10.0"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7D4104A3BA54DA673490171218E4B06F"
+            BlueprintIdentifier = "48B32E1F5B6126BB4914DC664B848F21"
             BuildableName = "libPhoneNumber_iOS.framework"
-            BlueprintName = "libPhoneNumber-iOS"
+            BlueprintName = "libPhoneNumber-iOS-iOS10.0"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

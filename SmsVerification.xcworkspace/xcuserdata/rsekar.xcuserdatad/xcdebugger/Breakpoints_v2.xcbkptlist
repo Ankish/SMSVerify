@@ -86,16 +86,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DeveloperViewController.swift"
-            timestampString = "575382838.312117"
+            filePath = "SmsVerification/Helper Classes/Alert.swift"
+            timestampString = "576769560.1143529"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "responseForOTPGeneration(responseCode:responseData:)"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "displayError(on:with:message:dismissController:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

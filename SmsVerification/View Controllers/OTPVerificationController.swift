@@ -17,16 +17,19 @@ import os.log
 class OTPVerificationController: OTPBaseViewController {
 
     // MARK: - Private Properties
-    private let phoneNumber : String
-    private let countryCode : String
+    let phoneNumber : String
+    let countryCode : String
+    
     private weak var consumerDelegate : OTPRequestResponseProtocol?
     private var retryCount = 0
     
     private var bottomConstraint : NSLayoutConstraint?
-    private lazy var finalizeView: FinalizeView = {
+    
+    lazy var finalizeView: FinalizeView = {
         let view = FinalizeView(properties: properties)
         return view
     }()
+    
     private let scrollView = UIScrollView()
     
     // MARK: - Init
@@ -133,7 +136,7 @@ class OTPVerificationController: OTPBaseViewController {
     }
     
     @objc
-    private func verifyButtonPressed() {
+    func verifyButtonPressed() {
         self.finalizeView.securityCodeTextField.textField.resignFirstResponder()
         
         guard let verificationCode = finalizeView.securityCodeTextField.textField.text else {
@@ -186,7 +189,7 @@ class OTPVerificationController: OTPBaseViewController {
     }
     
     @objc
-    private func resendSecurityCode() {
+    func resendSecurityCode() {
         if (retryCount >= properties.maxRetries) {
             Alert.displayError(on: self, with: "Error", message: "You have exceeded the max retries.")
         } else {

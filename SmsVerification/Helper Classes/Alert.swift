@@ -12,7 +12,7 @@ struct Alert {
     
     static func displayError(on viewController: OTPBaseViewController, with title: String, message: String, dismissController: Bool = false) {
         
-        DispatchQueue.main.async {
+       // DispatchQueue.main.async {
             viewController.hideActivityIndicator()
             
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -24,7 +24,7 @@ struct Alert {
             
             alert.addAction(action)
             viewController.present(alert, animated: true, completion: nil)
-        }
+        //}
     }
     
     static func displayMissingPhoneNumberError(on viewController: OTPBaseViewController) {

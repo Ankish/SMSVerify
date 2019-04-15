@@ -29,7 +29,7 @@ class OTPGenerationController: OTPBaseViewController {
     }
     
     // MARK: - Private Properties
-    private lazy var initiateView: InitiateView = {
+    lazy var initiateView: InitiateView = {
         let view = InitiateView(properties : properties)
         return view
     }()
@@ -37,7 +37,8 @@ class OTPGenerationController: OTPBaseViewController {
     private let scrollView = UIScrollView()
     private weak var consumerDelegate : OTPRequestResponseProtocol?
     private var bottomConstraint : NSLayoutConstraint?
-    private var selectedRegionCode : String? = NSLocale.current.regionCode {
+   
+    var selectedRegionCode : String? = NSLocale.current.regionCode {
         didSet {
             if let nationalNumber = getExampleNumber() {
                 let formatter = NBAsYouTypeFormatter(regionCode: selectedRegionCode)
@@ -138,7 +139,7 @@ class OTPGenerationController: OTPBaseViewController {
         }
     }
     
-    private func getValidPhoneNumber(phoneNumber : String) -> String {
+    func getValidPhoneNumber(phoneNumber : String) -> String {
         let numberUtil = NBPhoneNumberUtil()
         do {
             let numberParsed = try numberUtil.parse(phoneNumber, defaultRegion: self.selectedRegionCode ?? NSLocale.current.regionCode)
@@ -161,7 +162,7 @@ class OTPGenerationController: OTPBaseViewController {
     
     // MARK: - Action methods
     @objc
-    private func verifyButtonPressed() {
+    func verifyButtonPressed() {
         guard let countryCode = initiateView.phoneTextField.countryCodeTextField.text else { return }
         guard let phoneNumber = initiateView.phoneTextField.textField.text else { return }
         
